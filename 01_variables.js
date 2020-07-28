@@ -13,16 +13,16 @@ console.log("Aprendiendo Javascript JS!")
 
  var nombre
 
- /**
-  * Asignando valores
-  */
+/**
+ * Asignando valores
+ */
 
   nombre ='Brenda'
   console.log('Hello '+ nombre)
 
-  /**
-   * Declarando y asignando en una misma linea
-   */
+/**
+ * Declarando y asignando en una misma linea
+ */
 
 var edad = 18 , apellido = 'Barrios'
 

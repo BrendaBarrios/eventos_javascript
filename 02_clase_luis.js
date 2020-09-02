@@ -58,32 +58,25 @@ console.log(factorial(5))
 let suma = 0
 let media = 0
 let numero = 0
+let contador= 0
 
-numero = prompt("Ingresa un numero")
 
 if (numero == 0){
   console.log("SALISTE DEL PROGRAMA") 
 }
 
   do{
+    numero = 0
+    contador ++;
     numero = prompt("Ingresa un numero")
-    suma += numero
+    suma += parseInt(numero)
+    media = parseInt(suma) / parseInt(contador)
+
   }while (numero > 0)
 
-media = suma / numero
-
+  
 console.log(suma)
-console.log(media)
-
-
- // do{
-   // suma += i
-   // console.log("resultado" + suma)
-  //} while (numero > 0)
- 
-
-
-
+console.log(parseInt(media))
 
 
 

@@ -78,6 +78,42 @@ if (numero == 0){
 console.log(suma)
 console.log(parseInt(media))
 
+/** 
+El usuario te dará un número entero positivo cualquiera.
+Escribir un algoritmo que reduzca el número dado hasta 1, 
+solo se pueden hacer 2 posibles operaciones para reducir el número, 
+(1). 
+si el número es par se debe dividir entre 2, 
+(2).  de lo contrario 
+se debe multiplicar por 3 y sumarle 1; 
+
+repetir la operación  hasta conseguir un 1; 
+
+en cada reducción se debe agregar el resultado de la operación realizada e imprimir el arreglo 
+al terminar la reducción.
+*/
+
+let numero = 0
+let reduccion = 0
+
+numero = prompt("Ingresa un numero")
+console.log(numero)
+
+  do{
+    if(numero % 2 == 0){
+      reduccion = numero / 2
+    }else{
+      reduccion = (numero * 3) + 1
+    }
+    numero = reduccion
+    console.log(numero)
+    
+  }while(reduccion != 1)
+
+
+
+
+
 
 
 //Realizar un algoritmo que pida números 

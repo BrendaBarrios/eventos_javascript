@@ -109,10 +109,17 @@ console.log(numero)
     console.log(numero)
   }while(reduccion != 1)
 
+// Intercambio de variables
+let guardo = 0
+let a = "valor 1"
+let b = "valor 2"
 
+guardo = a
 
-
-
+a = b
+console.log(a)
+b = guardo
+console.log(b)
 
 
 //Realizar un algoritmo que pida números 

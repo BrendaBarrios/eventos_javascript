@@ -105,9 +105,8 @@ console.log(numero)
     }else{
       reduccion = (numero * 3) + 1
     }
-    numero = reduccion
+    numero = reduccion // swap
     console.log(numero)
-    
   }while(reduccion != 1)
 
 

@@ -1,0 +1,35 @@
+
+<h1> Mostrando texto dependiendo del tamaño dado</h1>
+
+<body >
+<input id ="num1"> </input>
+<p id="resultado"></p>
+
+
+</body>
+
+<style>
+</style>
+
+
+
+<script>
+
+
+    let input1 = document.getElementById("num1");
+
+    input1.oninput= texto_tamano;
+
+    function texto_tamano(){
+        let tamano = input1.value;
+        console.log(tamano)
+        // Las propiedades del style van en camelCase
+        resultado.style.fontSize = tamano;
+        resultado.innerHTML = "Este texto es de " + tamano +"pt de tamaño"
+
+
+
+    }
+
+</script>
+

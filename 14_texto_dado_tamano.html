@@ -22,12 +22,16 @@
 
     function texto_tamano(){
         let tamano = input1.value;
-        console.log(tamano)
+
         // Las propiedades del style van en camelCase
-        resultado.style.fontSize = tamano;
-        resultado.innerHTML = "Este texto es de " + tamano +"pt de tamaño"
-
-
+        if (isNaN(input1.value)== false){
+            resultado.style.fontSize = tamano;
+            resultado.innerHTML = "Este texto es de " + tamano +"pt de tamaño"
+        } else if (isNaN(input1.value) == true){
+            console.log("si entro letra")
+            resultado.style.fontSize = 12;
+            resultado.innerHTML=" Este texto es de 12 pt es de tamaño por defecto"
+        }
 
     }
 

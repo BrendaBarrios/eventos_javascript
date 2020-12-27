@@ -1,0 +1,34 @@
+
+<h1> Mostrando texto dependiendo del tamaño dado</h1>
+
+<body >
+<input type="checkbox" id ="check" onclick="evento()" checked> </input>
+<div id="figura" "></div>
+
+
+</body>
+<style>
+    div{
+        background: red;
+        height: 400px;
+        width: 400px;
+    }
+</style>
+
+
+
+<script>
+
+
+    let check = document.getElementById("check");
+
+    function evento(){
+        if(check.checked == false){
+            figura.style.visibility='collapse';
+        }else{
+            figura.style.visibility='visible';
+        }
+    }
+
+</script>
+

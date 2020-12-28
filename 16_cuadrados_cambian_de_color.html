@@ -1,0 +1,80 @@
+
+<h1> Mostrando texto dependiendo del tamaño dado</h1>
+
+<body >
+
+<div id="panel">
+<div id="figura1" onclick="figura1()"></div>
+<div id="figura2" onclick="figura2()"></div>
+<div id="figura3" onclick="figura3()"></div>
+</div>
+
+
+</body>
+<style>
+
+    #panel{
+        background: green;
+        display:inline-block;
+        height: 300px;
+        width: 1000px;
+        margin: 800 px;
+        padding: 800 px;
+
+    }
+
+    div{
+        display:inline-block;
+        margin: 800 px;
+        padding: 800 px;
+        background: red;
+        height: 200px;
+        width: 200px;
+
+
+
+    }
+</style>
+
+
+
+<script>
+
+
+
+
+    function figura1(){
+        let figura1 = document.getElementById("figura1");
+
+        if(figura1.style.background ==  "red"){
+            figura1.style.background = "blue"
+        }else {
+            figura1.style.background ="red"
+        }
+    }
+
+
+    function figura2(){
+        let figura2 = document.getElementById("figura2");
+
+        if(figura2.style.background ==  "red"){
+            figura2.style.background = "blue"
+        }else {
+            figura2.style.background ="red"
+        }
+    }
+
+
+    function figura3(){
+        let figura3 = document.getElementById("figura3");
+
+        if(figura3.style.background ==  "red"){
+            figura3.style.background = "blue"
+        }else {
+            figura3.style.background ="red"
+        }
+    }
+
+
+</script>
+

@@ -1,0 +1,59 @@
+
+<h1> Incrementar/Decrementar </h1>
+
+<body >
+
+
+<button id="boton1" onclick="decrementar()"> - </button>
+<p id ="resultado"></p>
+<button id="boton2" onclick="incremento()"> + </button>
+
+
+
+</body>
+<style>
+    button{
+        font-size: 60px;
+        font-family: Verdana;
+        font-weight: 200px;
+        display: inline;
+        margin-left: 10px;
+
+    }
+
+    p{
+        font-size: 60px;
+        font-family: Verdana;
+        font-weight: 200px;
+        display: inline;
+        margin-left: 10px;
+
+    }
+
+</style>
+
+
+
+<script>
+
+
+
+
+    let resultado1 = document.getElementById("resultado");
+    let count = 0
+
+    function incremento(){
+        count += 1;
+        resultado1.innerHTML= count;
+    }
+
+
+    function decrementar(){
+        count -= 1;
+        resultado1.innerHTML= count;
+
+    }
+
+
+</script>
+

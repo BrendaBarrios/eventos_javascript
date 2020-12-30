@@ -1,0 +1,57 @@
+
+<h1> Eventos del mouse</h1>
+
+<body >
+
+
+<div id="caja" onmousemove="evento(event)" onmouseleave ="salio()">
+<p id ="resultado"> Esperando ...🙉🙉</p>
+</div>
+
+
+</body>
+<style>
+    body{
+        display :flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div{
+        width: 50%;
+        height: 50%;
+        border: 5 px;
+        display :flex;
+        border-style: solid ;
+        border-color: red;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    p{
+        font-size: 40px;
+        font-family: Verdana;
+
+    }
+
+</style>
+
+
+
+
+<script>
+
+    let caja = document.getElementById("caja");
+
+    function evento(event){
+        let x = event.clientX;
+        let y = event.clientY;
+        resultado.innerHTML=  ` El mouse esta en 💫 ${x}, ${y}`;
+    }
+
+
+
+</script>
+

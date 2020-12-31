@@ -1,0 +1,36 @@
+
+<h1> Eventos del mouse 3</h1>
+
+<body id="caja" onmousemove="evento(event)">
+<p id ="resultado"></p>
+</div>
+
+
+</body>
+<style>
+    p{
+        color:green;
+        background: green;
+        height: 50px;
+        width: 50px;
+
+    }
+</style>
+
+
+<script>
+
+    let caja = document.getElementById("caja");
+
+    function evento(event){
+        let x = event.clientX;
+        let y = event.clientY;
+        resultado.style.top = y - 25;
+        resultado.style.left = x - 25;
+        resultado.style.position = 'absolute';
+    }
+
+
+
+</script>
+

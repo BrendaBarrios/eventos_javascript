@@ -1,0 +1,47 @@
+
+<h1> Mini-Proyecto paso a paso: TO-DOs (Lista de Tareas) </h1>
+<h2>Capturar el texto del input al presionar la tecla ENTER y limpiar el campo al presionar ENTER</h2>
+
+
+
+<input id="caja" placeholder="Escribe una tarea"></input>
+<p id ="todo"></p>
+</body>
+
+<style>
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input{
+        width: 600px;
+    }
+
+</style>
+
+
+
+<script>
+
+    let caja = document.getElementById("caja");
+    let todo = document.getElementById("todo");
+
+    caja.onkeydown = evento;
+
+    function evento(e){
+        if(e.keyCode == 13){
+            todo.innerHTML = caja.value;
+            caja.value ="";
+        }
+
+
+    }
+
+
+
+</script>
+

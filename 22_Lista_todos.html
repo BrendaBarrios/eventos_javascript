@@ -1,0 +1,65 @@
+
+<h1> Mini-Proyecto paso a paso: TO-DOs (Lista de Tareas) </h1>
+<h3>Modificar el DOM, agregar un elemento de lista (li) a una lista (ol) al dar ENTER</h3>
+<p>Ejemplo: Se pueden agregar muchas etiquetas llamando al metodo appendChild varias veces</p>
+
+
+<input id="caja" placeholder="Escribe una tarea"></input>
+<div id ="todos"></div>
+</body>
+
+<style>
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input{
+        width: 50%;
+    }
+
+    div{
+        border:solid 1px;
+        margin: 2px;
+        font-family: Helvica;
+        font-size: 14pt;
+        width: 50%;
+    }
+
+    div#todos{
+        border-color: white;
+        width: 100 px;
+    }
+
+    div:nth-child(2n){
+        background-color:#C4F6F5;
+    }
+</style>
+
+
+
+<script>
+
+    let caja = document.getElementById("caja");
+    let todos = document.getElementById("todos");
+
+    caja.onkeydown = evento;
+
+    function evento(e){
+
+        if(e.keyCode == 13){
+            let div = document.createElement("div")
+            div.innerHTML= caja.value
+            todos.appendChild(div)
+            caja.value ="";
+
+        }
+    }
+
+
+
+</script>
+

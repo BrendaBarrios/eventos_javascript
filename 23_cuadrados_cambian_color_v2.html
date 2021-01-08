@@ -1,0 +1,110 @@
+
+<h1>Grupo de pestañas</h1>
+<h3>Simular el comportamiento de tabs o pestañas activas(Es necesario iterar en la lista de hijos), por defecto activar la primera</h3>
+
+<body>
+<div id ="todos">
+    <div id="caja1" class="defecto-1" onclick="evento1()"></div>
+    <div id="caja2" class="defecto" onclick="evento2()"></div>
+    <div id="caja3" class="defecto" onclick="evento3()"></div>
+    <div id="caja4" class="defecto" onclick="evento4()"></div>
+ 
+
+</div>
+</body>
+
+<style>
+
+
+    #todos{
+        border:solid 1px;
+        margin: 2px;
+        width: 800px;
+        height: 150px;
+        border-color: seashell;
+    }
+
+    .defecto {
+        border: seagreen 2px;
+        background: green;
+        height: 50px;
+        width: 150px;
+        margin: 5px;
+        display: inline-block;
+    }
+
+    .defecto-1 {
+        border: blue 2px;
+        background: blue;
+        height: 50px;
+        width: 150px;
+        margin: 5px;
+        display: inline-block;
+    }
+
+
+</style>
+
+
+
+<script>
+
+
+        let caja4 = document.getElementById("caja4")
+   
+
+
+    function evento1(){
+        let caja1 = document.getElementById("caja1")
+        if(caja1.style.background == "green"){
+            caja1.style.background = "blue"
+            caja2.style.background = "green"
+            caja3.style.background = "green"
+            caja4.style.background = "green"
+        }
+
+    }
+
+
+    function evento2(){
+        let caja1 = document.getElementById("caja1")
+        let caja2 = document.getElementById("caja2")
+
+        if(caja2){
+            caja2.style.background = "blue"
+            caja1.style.background = "green"
+            caja3.style.background = "green"
+            caja4.style.background = "green"
+
+        }
+        
+    }
+
+    function evento3(){
+        let caja3 = document.getElementById("caja3")
+        let caja2 = document.getElementById("caja2")
+
+        if(caja3){
+            caja3.style.background = "blue"
+            caja2.style.background = "green"
+            caja1.style.background = "green"
+            caja4.style.background = "green"
+        }
+        
+    }
+
+    function evento4(){
+        let caja3 = document.getElementById("caja3")
+        let caja4 = document.getElementById("caja4")
+
+        if(caja3){
+            caja4.style.background = "blue"
+            caja3.style.background = "green"
+            caja2.style.background = "green"
+            caja1.style.background = "green"
+        }
+        
+    }
+
+
+</script>

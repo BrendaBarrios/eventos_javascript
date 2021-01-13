@@ -1,0 +1,53 @@
+
+<h1>Grupo de barras</h1>
+
+
+<body>
+
+    <p> Valores apresentar en la grafica</p>
+    <input id = "valores" placeholder="Valores separados por coma"></input>
+    <button id= "boton" onclick="evento()">Graficar</button>
+    <div id="grafico"></div>
+
+</body>
+
+<style>
+    #grafico{
+        height:1px;
+        width: 100%;
+        border: 1px solid gray;
+    }
+    
+
+</style>
+
+
+
+<script>
+
+    let valores = document.getElementById("valores");
+    let grafico = document.getElementById("grafico");
+    let longitud = 0;
+    let numero = 0;
+
+
+    function evento(){
+        numeros = valores.value.split(",");
+
+        for(i=0;i< numeros.length;i++){
+            let caracter = numeros[i];
+            console.log(caracter); 
+            let div = document.createElement("div")
+            div.style.width= (caracter*100)/10;
+            div.style.height= 30;
+            div.style.border= 2;
+            div.style.color= "white";
+            div.style.background= "red";
+            div.innerHTML= caracter;
+            grafico.appendChild(div)
+        }
+
+        
+    }
+
+</script>
